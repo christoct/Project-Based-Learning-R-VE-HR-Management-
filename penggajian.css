@@ -1,0 +1,250 @@
+.data_tittle_penggajian {
+    color: rgb(25, 13, 74);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.4vw;
+}
+
+.data_struktur_gaji {
+    width: 29vw;
+    height: 12.5vw;
+    background-color: white;
+    margin-top: 0.2vw;
+    margin-left: 0.5vw;
+    margin-bottom: 0.2vw;
+    border: rgb(164, 164, 164) 1px solid;
+    display: inline;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.2vw;
+    padding-left: 1.5vw;
+    float: left;
+    border-radius: 5px;
+}
+
+.wadah_struktur_gaji {
+    padding: 0.8vw;
+}
+
+.icon_keterangan_struktur {
+    width: 1.5vw;
+    height: 1.5vw;
+    position: relative;
+    top: 0.2vw;
+    padding-right: 0.3vw;
+}
+
+.body_struktur {
+    color: rgb(25, 13, 74);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    display: inline-block;
+    margin-bottom: 1vw;
+    position: relative;
+    bottom: 0vw;
+}
+
+.ubah_penggajian {
+    background-color: rgb(25, 13, 74);
+    width: 12%;
+    color: rgb(249, 252, 255);
+    display: block;
+    text-align: center;
+    margin-left: 0.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    float: right;
+    padding: 0.7vw;
+    font-size: 1vw;
+    border-radius: 5px;
+    border: solid 1.5px rgb(25, 13, 74);
+}
+
+.ubah_penggajian:hover {
+    border-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.hapus_penggajian {
+    background-color: rgb(181, 0, 0);
+    font-size: 1vw;
+    display: block;
+    width: 14%;
+    color: rgb(249, 252, 255);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    float: right;
+    padding: 0.7vw;
+    border-radius: 5px;
+    border: solid 1.5px rgb(181, 0, 0);
+}
+
+.hapus_penggajian:hover {
+    border-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/* Rekening */
+
+.data_rekening {
+    width: 20.7vw;
+    height: 10vw;
+    background-color: white;
+    margin-top: 0.2vw;
+    margin-left: 0.5vw;
+    margin-bottom: 0.2vw;
+    border: rgb(164, 164, 164) 1px solid;
+    display: inline;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.2vw;
+    padding-left: 1.5vw;
+    float: left;
+    border-radius: 5px;
+}
+
+.wadah_rekening {
+    padding: 0.8vw;
+}
+
+.body_rekening {
+    color: rgb(25, 13, 74);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    display: inline-block;
+    margin-bottom: 0.5vw;
+    position: relative;
+    bottom: 0vw;
+}
+
+.keterangan_rekening {
+    color: rgb(25, 13, 74);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3vw;
+    float: right;
+    display: block;
+    position: relative;
+    top: 0.2vw;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Kontrak */
+
+.data_kontrak {
+    width: 29vw;
+    height: 10.5vw;
+    background-color: white;
+    margin-top: 0.2vw;
+    margin-left: 0.5vw;
+    margin-bottom: 0.2vw;
+    border: rgb(164, 164, 164) 1px solid;
+    display: inline;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.2vw;
+    padding-left: 1.5vw;
+    float: left;
+    border-radius: 5px;
+}
+
+.wadah_kontrak {
+    padding: 0.8vw;
+}
+
+.body_kontrak {
+    color: rgb(25, 13, 74);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    display: inline-block;
+    margin-bottom: 1vw;
+    position: relative;
+    bottom:0vw ;
+}
+
+.keterangan_kontrak {
+    color: rgb(25, 13, 74);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    float:right;
+    display: block;
+    position: relative;
+    top: 0.2vw;
+    font-weight: bold;
+    margin-bottom: 0vw;
+    font-style: italic;
+}
+
+/* Slip Gaji */
+
+
+.data_slip {
+    width: 29vw;
+    height: 16.5vw;
+    background-color: white;
+    margin-top: 0.2vw;
+    margin-left: 0.5vw;
+    margin-bottom: 0.2vw;
+    border: rgb(164, 164, 164) 1px solid;
+    display: inline;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.2vw;
+    padding-left: 1.5vw;
+    float: left;
+    border-radius: 5px;
+}
+
+.wadah_slip {
+    padding: 0.8vw;
+}
+
+.icon_keterangan_slip {
+    width: 1.5vw;
+    height: 1.5vw;
+    position: relative;
+    top: 0.2vw;
+    padding-right: 0.3vw;
+}
+
+.body_slip {
+    color: rgb(25, 13, 74);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    display: inline-block;
+    margin-bottom: 1vw;
+    position: relative;
+    bottom: 0vw;
+}
+
+.keterangan_slip {
+    color: rgb(25, 13, 74);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    float:right;
+    display: block;
+    position: relative;
+    top: 0.2vw;
+    font-weight: bold;
+    margin-bottom: 0vw;
+    font-style: italic;
+}
+
+/* adjustable */
+@media (max-width:1200px) {
+    .ubah_penggajian {
+        display: none;
+    }
+    .hapus_penggajian {
+        display: none;
+    }
+    .wadah_rekening{
+        padding-top: 8%;
+    }
+    .wadah_struktur_gaji{
+        padding-top: 8%;
+    }
+    .wadah_kontrak{
+        padding-top: 8%;
+    }
+    .wadah_slip{
+        padding-top: 8%;
+    }
+}

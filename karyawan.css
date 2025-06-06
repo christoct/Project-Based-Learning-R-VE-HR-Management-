@@ -1,0 +1,351 @@
+.data_karyawan {
+    width: 29vw;
+    height: 12.5vw;
+    background-color: white;
+    margin-top: 0.2vw;
+    margin-left: 0.5vw;
+    margin-bottom: 0.2vw;
+    border: rgb(164, 164, 164) 1px solid;
+    display: inline;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.2vw;
+    padding-left: 1.5vw;
+    float: left;
+    border-radius: 5px;
+}
+
+.wadah_karyawan {
+    padding: 0.8vw;
+}
+
+.data_tittle_karyawan {
+    color: rgb(25, 13, 74);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.4vw;
+}
+
+.body_karyawan {
+    color: rgb(25, 13, 74);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    display: block;
+    margin-bottom: 1.2vw;
+}
+
+.keterangan_karyawan{
+    color: rgb(25, 13, 74);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    display: block;
+    margin-bottom: 0.5vw;
+}
+
+.icon_keterangan_karyawan{
+    width: 1vw;
+    height: 1vw;
+    position: relative;
+    top: 0.1vw;
+    padding-right: 0.4vw;
+}
+
+.ubah_karyawan {
+    background-color: rgb(25, 13, 74);
+    width: 11%;
+    color: rgb(249, 252, 255);
+    display: block;
+    text-align: center;
+    margin-left: 0.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    float: right;
+    padding: 0.7vw;
+    font-size: 1vw;
+    border-radius: 5px;
+    border: solid 1.5px rgb(25, 13, 74);
+}
+
+.ubah_karyawan:hover {
+    border-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.hapus_karyawan {
+    background-color: rgb(181, 0, 0);
+    font-size: 1vw;
+    display: block;
+    width: 13%;
+    color: rgb(249, 252, 255);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    float: right;
+    padding: 0.7vw;
+    border-radius: 5px;
+    border: solid 1.5px rgb(181, 0, 0);
+}
+
+.hapus_karyawan:hover {
+    border-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/* departemen */
+
+.data_departemen {
+    width: 29vw;
+    height: 8.6vw;
+    background-color: white;
+    margin-top: 0.2vw;
+    margin-left: 0.5vw;
+    margin-bottom: 0.2vw;
+    border: rgb(164, 164, 164) 1px solid;
+    display: inline;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.2vw;
+    padding-left: 1.5vw;
+    float: left;
+    border-radius: 5px;
+}
+
+.wadah_departemen {
+    padding: 0.8vw;
+}
+
+.icon_keterangan_departemen{
+    width: 1.5vw;
+    height: 1.5vw;
+    position: relative;
+    top: 0.2vw;
+    padding-right: 0.3vw;
+}
+
+.body_departemen {
+    color: rgb(25, 13, 74);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    display: inline-block;
+    margin-bottom: 1.5vw;
+    position: relative;
+    bottom:0vw ;
+}
+
+/* Divisi */
+
+.data_divisi {
+    width: 29vw;
+    height: 10.7vw;
+    background-color: white;
+    margin-top: 0.2vw;
+    margin-left: 0.5vw;
+    margin-bottom: 0.2vw;
+    border: rgb(164, 164, 164) 1px solid;
+    display: inline;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.2vw;
+    padding-left: 1.5vw;
+    float: left;
+    border-radius: 5px;
+}
+
+.wadah_divisi {
+    padding: 0.8vw;
+}
+
+.icon_keterangan_divisi{
+    width: 1.5vw;
+    height: 1.5vw;
+    position: relative;
+    top: 0.2vw;
+    padding-right: 0.3vw;
+}
+
+.body_divisi {
+    color: rgb(25, 13, 74);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    display: inline-block;
+    margin-bottom: 1vw;
+    position: relative;
+    bottom:0vw ;
+}
+
+.keterangan_divisi {
+    color: rgb(25, 13, 74);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    float:right;
+    display: block;
+    position: relative;
+    top: 0.5vw;
+    font-weight: bold;
+    margin-bottom: 0vw;
+    font-style: italic;
+}
+
+/* Spesifikasi */
+
+.data_spec {
+    width: 29vw;
+    height: 13.7vw;
+    background-color: white;
+    margin-top: 0.2vw;
+    margin-left: 0.5vw;
+    margin-bottom: 0.2vw;
+    border: rgb(164, 164, 164) 1px solid;
+    display: inline;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.2vw;
+    padding-left: 1.5vw;
+    float: left;
+    border-radius: 5px;
+}
+
+.wadah_spec {
+    padding: 0.8vw;
+}
+
+.icon_keterangan_spec{
+    width: 1.5vw;
+    height: 1.5vw;
+    position: relative;
+    top: 0.2vw;
+    padding-right: 0.3vw;
+}
+
+.body_spec {
+    color: rgb(25, 13, 74);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    display: inline-block;
+    margin-bottom: 1vw;
+    position: relative;
+    bottom:0vw ;
+}
+
+.keterangan_spec {
+    color: rgb(25, 13, 74);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    float:right;
+    display: block;
+    position: relative;
+    top: 0.5vw;
+    font-weight: bold;
+    margin-bottom: 0vw;
+    font-style: italic;
+}
+
+/* Deskripsi */
+
+.tabel_desc {
+    width: 97%;
+    margin-left: 1vw;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 0.7vw;
+}
+
+.heading_desc {
+    border: 1px rgb(169, 169, 169) solid;
+    background-color: rgb(186, 228, 228);
+    margin-bottom: 0.5vw;
+    display: block;
+    padding-left: 0.7vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    color: rgb(25, 13, 74);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.4vw;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.data_desc {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    padding-left: 0.7vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    color: rgb(25, 13, 74);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    border: 0.3px rgb(169, 169, 169) solid;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.data_desc:hover {
+    cursor: pointer;
+    background-color: rgb(240, 240, 240);
+}
+
+/* Kemampuan */
+
+.tabel_skill {
+    width: 97%;
+    margin-left: 1vw;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 1vw;
+    margin-bottom: 1.5vw;
+}
+
+.heading_skill {
+    border: 1px rgb(169, 169, 169) solid;
+    background-color: rgb(186, 228, 228);
+    margin-bottom: 0.5vw;
+    display: block;
+    padding-left: 0.7vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    color: rgb(25, 13, 74);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.4vw;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.data_skill {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    padding-left: 0.7vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    color: rgb(25, 13, 74);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    border: 0.3px rgb(169, 169, 169) solid;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.data_skill:hover {
+    cursor: pointer;
+    background-color: rgb(240, 240, 240);
+}
+/* adjustable */
+@media (max-width:1200px) {
+    .ubah_karyawan {
+        display: none;
+    }
+
+    .hapus_karyawan {
+        display: none;
+    }
+    .wadah_karyawan{
+        padding-top: 8%;
+    }
+    .wadah_departemen{
+        padding-top: 8%;
+    }
+    .wadah_divisi{
+        padding-top: 8%;
+    }
+    .wadah_spec{
+        padding-top: 8%;
+    }
+    .wadah_desc{
+        padding-top: 6%;
+    }
+}

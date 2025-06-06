@@ -1,0 +1,353 @@
+.top{
+    width: 95%;
+    background-color: rgb(25, 13, 74);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    color: rgb(249, 252, 255);
+    font-size: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    height: 2.2vw;
+    position: fixed;
+    z-index: 10;
+}
+.bar{
+    width: 99%;
+    background-color: rgb(255, 255, 255);
+    border: solid 1px rgba(128, 128, 128, 0.5);
+    padding-top: 8vw;
+    padding-bottom: 1.5vw;
+    padding-left: 1vw;
+    height: 3.2vw;
+}
+body{
+    margin: 0%;
+    background-color: rgb(230, 230, 230);
+}
+.gambar_modul{
+    width: 3vw;
+    height: 3vw;
+    position: fixed;
+    left: 1vw;
+    top: 20px;
+}
+.back{
+    width: 3vw;
+    height: 3vw;
+    color: rgb(249, 252, 255);
+    display: none;
+    position: fixed;
+    left: 1vw;
+    top: 20px;
+}
+.modul:hover{
+    cursor: pointer;
+}
+.modul{
+    width: 10%;
+}
+.menu{
+    list-style: none;
+    float: left;
+    padding: 0.7vw;
+    padding-top: 0.6vw;
+    padding-bottom: 0.6vw;
+    font-size: 1.3vw;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 3px solid rgb(25, 13, 74) ;
+}
+.daftar_menu{
+    position: relative;
+    top: -4.5vw;
+    left: 9vw;
+    width: 80%;
+}
+.menu:hover{
+    cursor: pointer;
+    background-color: rgba(240, 248, 255, 0.8);
+    color: rgb(25, 13, 74) ;
+    border: 2px solid rgba(0, 17, 255,0.8);
+}
+.profile{
+        border: rgb(249, 252, 255) 2px solid;
+        border-radius: 100%;
+        width: 3vw;
+        height: 3vw;
+    }
+.profile_drop{
+    margin: 0%;
+    padding: 0%;
+    position: fixed;
+    top:1vw;
+    left:93.5vw;
+    border: 0%;
+    margin-top: 0.5vw;
+    width: 0vw;
+}
+.profile:hover{
+    cursor:pointer;
+}
+.opsi_profil{
+    font-size: 1.3vw;
+    background-color: rgb(248, 248, 248);
+    width:20.5vw;
+    position: relative;
+    left: -16vw;
+    top: 0.5vw;
+    font-weight: normal;
+    padding-top: vw;
+    padding-bottom: 1vw;
+    text-align: left;
+    border: 1px rgba(148, 148, 148, 0.285) solid;
+    display: none;
+}
+.opsi_profil:hover{
+    background-color: rgb(140, 160, 201);
+    cursor:pointer;
+}
+.logout{
+    color: red;
+    font-weight: bold;
+    position: relative;
+    top: -1px;
+    left: 2vw;
+}
+.lihat{
+    color: black;
+    position: relative;
+    left: 2vw;
+    top: -1px;
+}
+.user{
+    font-size: 1.3vw;
+    background-color: rgb(20, 72, 183);
+    width:20.5vw;
+    position: relative;
+    left: -16vw;
+    top: 0.5vw;
+    font-weight: normal;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    text-align: center;
+    border: 1px rgba(153, 153, 153,0.5) solid;
+    display: none;
+}
+.user:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.space{
+    background-color: rgb(248, 248, 248);
+    width:20.58vw;
+    position: relative;
+    left: -16vw;
+    top: 0.5vw;
+    height: 1.5vw;
+    display: none;
+}
+.emot_logout{
+    height:2vw;
+    width:2vw;
+    color: red;
+    font-weight: bold;
+    position: relative;
+    left: 1vw;
+    top:0.5vw
+}
+.emot_lihat{
+    height:2vw;
+    width:2vw;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    left: 1vw;
+    top:0.5vw
+}
+.new{
+    background-color: rgb(25, 13, 74);
+    width: 5vw;
+    color: rgb(249, 252, 255);
+    text-align: center;
+    vertical-align: middle;
+    height: 3vw;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    top: 0.5vw;
+    padding: 0.9vw;
+    border-radius: 12px;
+    border: solid 1.5px rgb(25, 13, 74);
+}
+.new_karyawan{
+    background-color: rgb(25, 13, 74);
+    width: 5vw;
+    color: rgb(249, 252, 255);
+    text-align: center;
+    height: 3vw;
+    padding-top: 1vw;
+    position: relative;
+    top: 0.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 0.9vw;
+    border-radius: 12px;
+    border: solid 1.5px rgb(25, 13, 74);
+}
+.new_penggajian{
+    background-color: rgb(25, 13, 74);
+    width: 5vw;
+    color: rgb(249, 252, 255);
+    text-align: center;
+    vertical-align: middle;
+    height: 3vw;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    top: 0.5vw;
+    padding: 0.9vw;
+    border-radius: 12px;
+    border: solid 1.5px rgb(25, 13, 74);
+}
+.tittle_penggajian{
+    position: relative;
+    top: 0.9vw;
+    left: 0.3vw;
+    padding-left: 0.5vw;
+    font-size: 1.4vw;
+    color: rgb(30, 30, 30);
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+.new_penggajian:hover{
+    cursor: pointer;
+    border-color: rgb(255, 255, 255);
+}
+.new_penilaian{
+    background-color: rgb(25, 13, 74);
+    width: 5vw;
+    color: rgb(249, 252, 255);
+    text-align: center;
+    vertical-align: middle;
+    height: 3vw;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    top: 0.5vw;
+    padding: 0.9vw;
+    border-radius: 12px;
+    border: solid 1.5px rgb(25, 13, 74);
+}
+.tittle_penilaian{
+    position: relative;
+    top: 0.9vw;
+    left: 0.3vw;
+    padding-left: 0.5vw;
+    font-size: 1.4vw;
+    color: rgb(30, 30, 30);
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+.new_penilaian:hover{
+    cursor: pointer;
+    border-color: rgb(255, 255, 255);
+}
+.tittle_menu{
+    position: relative;
+    top: 0.9vw;
+    left: 0.3vw;
+    padding-left: 0.5vw;
+    font-size: 1.4vw;
+    color: rgb(30, 30, 30);
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+.tittle_karyawan{
+    position: relative;
+    top: 0.9vw;
+    left: 0.3vw;
+    padding-left: 0.5vw;
+    font-size: 1.4vw;
+    color: rgb(30, 30, 30);
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+.new:hover{
+    cursor: pointer;
+    border-color: rgb(255, 255, 255);
+}
+.new_karyawan:hover{
+    cursor: pointer;
+    border-color: rgb(255, 255, 255);
+}
+.wadah_search{
+    width: 17vw;
+    margin-left: 32vw;
+    margin-bottom: 2vw;
+}
+.search_bar{
+    height: 2vw;
+    position: relative;
+    top: -0.95vw;
+    width: 30vw;
+    top:-1.4vw;
+    padding-left: 3vw;
+    font-size: 1.2vw;
+}
+.search{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    width: 1.5vw;
+    height: 1.5vw;
+    padding-top: 0.1vw;
+    padding-bottom: 0.1vw;
+    top: -3.55vw;
+    left: 0.5vw;
+    border-radius: 2px;
+    padding-left: 0.3vw;
+    padding-right: 0.3vw;
+    color: rgb(99, 99, 99);
+}
+.search:hover{
+    cursor: pointer;
+}
+@media (max-width:1200px) {
+    .profile{
+        display: none;
+    }
+    .profile_drop{
+        display: none;
+    }
+    .top{
+        height: 3.5%;
+    }
+    .gambar_modul{
+        top:1.5vw;
+    }
+    .back{
+        top:1.5vw;
+    }
+    .new,.new_karyawan,.new_penggajian,.new_penilaian{
+        display: none;
+    }
+    .tittle_menu{
+        left: -55vw;
+    }
+    .tittle_karyawan{
+        left: -66vw;
+    }
+    .tittle_penggajian{
+        left: -52vw;
+    }
+    .tittle_penilaian{
+        left: -49vw;
+    }
+    .tittle_menu,.tittle_karyawan,.tittle_penggajian,.tittle_penilaian{
+        top: 1.5vw;
+        font-size: 2vw;
+    }
+    .bar{
+        display: none;
+    }
+}
