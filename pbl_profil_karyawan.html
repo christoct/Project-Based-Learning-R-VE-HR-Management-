@@ -8,10 +8,22 @@
 </head>
 <script src="jquery.js"></script>
 <script src="modul_function.js"></script>
+<script src="karyawan.js"></script>
 <link rel="stylesheet" href="modul_style.css">
 <link rel="stylesheet" href="karyawan.css">
+<link rel="stylesheet" href="popup_style.css">
 
 <body>
+    <div class="overlay"></div>
+    <div class="popup" id="hapus_popup">
+        <span class="x">&times;</span>
+        <span class="popup_tittle">Hapus Karyawan</span>
+        <hr class="line">
+        <span class="popup_text">Apakah Anda yakin mau menghapus karyawan ini?</span>
+        <br>
+        <span class="ya" id="hapus_status_valid">Ya</span>
+        <span class="tidak">Tidak</span>
+    </div>
     <div class="top">
         <div class="modul">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="back">
@@ -94,8 +106,8 @@
                     </svg>
                 </span>+6282264318002</span>
             <hr>
-            <div class="ubah_karyawan">Ubah</div>
-            <div class="hapus_karyawan">Hapus</div>
+            <div class="ubah_karyawan" id="ubah_profil">Ubah</div>
+            <div class="hapus_karyawan" id="hapus_profil">Hapus</div>
         </div>
     </div>
 </body>

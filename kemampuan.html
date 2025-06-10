@@ -8,6 +8,7 @@
 </head>
 <script src="jquery.js"></script>
 <script src="modul_function.js"></script>
+<script src="karyawan.js"></script>
 <link rel="stylesheet" href="modul_style.css">
 <link rel="stylesheet" href="popup_style.css">
 <link rel="stylesheet" href="karyawan.css">
@@ -29,6 +30,24 @@
         <br>
         <hr class="line">
         <span class="close_bidang" id="tutup_bidang">Tutup</span>
+        <span class="save_bidang" id="simpan_bidang">Simpan</span>
+    </div>
+
+    <div class="popup" id="update_bidang">
+        <span class="x_bidang">&times;</span>
+        <span class="popup_tittle">Ubah Bidang Kemampuan</span>
+        <hr class="line">
+        <table class="data">
+            <tr>
+                <td class="popup_text">Nama Bidang Kemampuan </td>
+                <td class="popup_data">
+                    <input type="text" name="nama_pencapaian" placeholder="co. Kemampuan SDM" class="popup_input">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <hr class="line">
+        <span class="close_bidang" id="hapus_bidang">Hapus</span>
         <span class="save_bidang" id="simpan_bidang">Simpan</span>
     </div>
 
@@ -70,6 +89,55 @@
         <hr class="line">
         <span class="close" id="tutup_jenis">Tutup</span>
         <span class="save" id="simpan_jenis">Simpan</span>
+    </div>
+
+    <div class="popup" id="update_skill">
+        <span class="x" id="close_jenis">&times;</span>
+        <span class="popup_tittle">Ubah Kemampuan Kerja</span>
+        <hr class="line">
+        <table class="data">
+            <tr>
+                <td class="popup_text">Bidang Kemampuan </td>
+                <td class="popup_data">
+                    <select name="" id="" class="popup_select">
+                        <option value="" disabled selected hidden class="placeholder">co. Marketing Skill</option>
+                        <option value="Marketing Skill">Marketing Skill</option>
+                        <option value="Soft Skill">Soft Skill</option>
+                        <option value="Kemampuan Teknologi">Kemampuan Teknologi</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="popup_text">Jenis Kemampuan</td>
+                <td class="popup_data">
+                    <input type="text" name="nama_pencapaian" placeholder="co. Prduct Branding" class="popup_input">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <hr class="line">
+        <span class="close" id="hapus_jenis">Hapus</span>
+        <span class="save" id="simpan_jenis">Simpan</span>
+    </div>
+
+    <div class="popup" id="hapus_kemampuan_popup">
+        <span class="x">&times;</span>
+        <span class="popup_tittle">Hapus Kemampuan</span>
+        <hr class="line">
+        <span class="popup_text">Apakah Anda yakin mau menghapus kemampuan ini?</span>
+        <br>
+        <span class="ya" id="hapus_status_valid">Ya</span>
+        <span class="tidak">Tidak</span>
+    </div>
+
+    <div class="popup" id="hapus_bidang_popup">
+        <span class="x">&times;</span>
+        <span class="popup_tittle">Hapus Bidang Kemampuan</span>
+        <hr class="line">
+        <span class="popup_text">Apakah Anda yakin mau menghapus bidang kemampuan ini?</span>
+        <br>
+        <span class="ya" id="hapus_status_valid">Ya</span>
+        <span class="tidak">Tidak</span>
     </div>
 
     <div class="top">
@@ -153,12 +221,12 @@
             </tr>
         </table>
         <table class="tabel_skill">
-            <tr class="heading_skill">
+            <tr class="heading_skill" id="bidang_kemampuan">
                 <td class="text_heading">
                     Pemrograman
                 </td>
             </tr>
-            <tr class="data_skill">
+            <tr class="data_skill" id="bidang_kemampuan">
                 <td class="isi_data_skill">Java Programing
                 </td>
             </tr>

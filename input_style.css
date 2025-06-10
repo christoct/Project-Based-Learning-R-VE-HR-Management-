@@ -504,8 +504,29 @@ option {
     left: 90vw;
     top: 7.5vw
 }
+.hapus_pekerjaan{
+    background-color: rgb(181, 0, 0);
+    width: 5vw;
+    color: rgb(249, 252, 255);
+    text-align: center;
+    vertical-align: middle;
+    height: 1.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 0.9vw;
+    border-radius: 12px;
+    border: solid 1.5px rgb(181, 0, 0);
+    position: absolute;
+    left: 90vw;
+    top: 8vw
+}
 
 .keluar_input:hover {
+    border-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.hapus_pekerjaan:hover {
     border-color: rgb(255, 255, 255);
     cursor: pointer;
 }

@@ -9,13 +9,14 @@
 <script src="jquery.js"></script>
 <script src="modul_function.js"></script>
 <script src="input_function.js"></script>
+<script src="penggajian.js"></script>
 <link rel="stylesheet" href="modul_style.css">
 <link rel="stylesheet" href="popup_style.css">
 <link rel="stylesheet" href="penggajian.css">
 
 <body>
     <div class="overlay"></div>
-    <div class="popup">
+    <div class="popup" id="input_struktur">
         <span class="x">&times;</span>
         <span class="popup_tittle">Tambah Struktur Gaji</span>
         <hr class="line">
@@ -32,7 +33,6 @@
                     <input type="number" class="popup_number" min="10" step="5" max="55" placeholder="co.20">
                     <span class="popup_keterangan">Jam / Minggu</span>
                 </td>
-
             </tr>
             <tr>
                 <td class="popup_text">Jumlah Gaji</td>
@@ -57,6 +57,59 @@
         <hr class="line">
         <span class="close">Tutup</span>
         <span class="save">Simpan</span>
+    </div>
+
+    <div class="popup" id="update_struktur">
+        <span class="x">&times;</span>
+        <span class="popup_tittle">Ubah Struktur Gaji</span>
+        <hr class="line">
+        <table class="data">
+            <tr>
+                <td class="popup_text">Nama Struktur</td>
+                <td class="popup_data">
+                    <input type="text" placeholder="co. Struktur Full-Time" class="popup_input">
+                </td>
+            </tr>
+            <tr>
+                <td class="popup_text">Jam Kerja</td>
+                <td class="popup_data">
+                    <input type="number" class="popup_number" min="10" step="5" max="55" placeholder="co.20">
+                    <span class="popup_keterangan">Jam / Minggu</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="popup_text">Jumlah Gaji</td>
+                <td class="popup_data">
+                    <input type="text" placeholder="co. Rp 2.000.000" class="popup_input" id="rupiah">
+                </td>
+            </tr>
+            <tr>
+                <td class="popup_text">Interval Gaji</td>
+                <td class="popup_data">
+                    <select name="departemen" id="" class="popup_select">
+                        <option value="" disabled selected hidden class="placeholder">co. Bulan</option>
+                        <option value="Bulan">Bulan</option>
+                        <option value="Minggu">Minggu</option>
+                        <option value="Hari">Hari</option>
+                        <option value="Jam">Jam</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <hr class="line">
+        <span class="close">Tutup</span>
+        <span class="save">Simpan</span>
+    </div>
+    
+    <div class="popup" id="hapus_popup">
+        <span class="x">&times;</span>
+        <span class="popup_tittle">Hapus Struktur Gaji</span>
+        <hr class="line">
+        <span class="popup_text">Apakah Anda yakin mau menghapus struktur gaji ini?</span>
+        <br>
+        <span class="ya" id="hapus_status_valid">Ya</span>
+        <span class="tidak">Tidak</span>
     </div>
 
     <div class="top">
@@ -141,8 +194,8 @@
                     </svg>
                 </span>Rp 2,000,000,-. / Bulan</span><br>
             <hr>
-            <div class="ubah_penggajian">Ubah</div>
-            <div class="hapus_penggajian">Hapus</div>
+            <div class="ubah_penggajian" id="ubah_struktur">Ubah</div>
+            <div class="hapus_penggajian" id="hapus_struktur">Hapus</div>
         </div>
     </div>
 </body>

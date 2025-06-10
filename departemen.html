@@ -8,13 +8,14 @@
 </head>
 <script src="jquery.js"></script>
 <script src="modul_function.js"></script>
+<script src="karyawan.js"></script>
 <link rel="stylesheet" href="modul_style.css">
 <link rel="stylesheet" href="popup_style.css">
 <link rel="stylesheet" href="karyawan.css">
 
 <body>
     <div class="overlay"></div>
-    <div class="popup">
+    <div class="popup" id="input_departemen">
         <span class="x">&times;</span>
         <span class="popup_tittle">Tambah Departemen</span>
         <hr class="line">
@@ -41,6 +42,45 @@
         <hr class="line">
         <span class="close">Tutup</span>
         <span class="save">Simpan</span>
+    </div>
+
+    <div class="popup" id="update_departemen">
+        <span class="x">&times;</span>
+        <span class="popup_tittle">Ubah Departemen</span>
+        <hr class="line">
+        <table class="data">
+            <tr>
+                <td class="popup_text">Nama Departemen </td>
+                <td class="popup_data">
+                    <input type="text" name="nama_pencapaian" placeholder="co. Marketing" class="popup_input">
+                </td>
+            </tr>
+            <tr>
+                <td class="popup_text">Nama Direktur </td>
+                <td class="popup_data">
+                    <select name="" id="" class="popup_select">
+                        <option value="" disabled selected hidden class="placeholder">Pemimpin Departemen</option>
+                        <option value="Agung Wahyudi">Agung Wahyudi</option>
+                        <option value="Christian Octavianus">Christian Octavianus</option>
+                        <option value="Michael Eka">Michael Eka</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <hr class="line">
+        <span class="close">Tutup</span>
+        <span class="save">Simpan</span>
+    </div>
+
+    <div class="popup" id="hapus_popup">
+        <span class="x">&times;</span>
+        <span class="popup_tittle">Hapus Departemen</span>
+        <hr class="line">
+        <span class="popup_text">Apakah Anda yakin mau menghapus departemen ini?</span>
+        <br>
+        <span class="ya" id="hapus_status_valid">Ya</span>
+        <span class="tidak">Tidak</span>
     </div>
 
     <div class="top">
@@ -112,8 +152,8 @@
                             0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
                     </svg>
                 </span>Christian Octavianus</span><br>
-            <div class="ubah_karyawan">Ubah</div>
-            <div class="hapus_karyawan">Hapus</div>
+            <div class="ubah_karyawan" id="ubah_departemen">Ubah</div>
+            <div class="hapus_karyawan" id="hapus_departemen">Hapus</div>
         </div>
     </div>
 

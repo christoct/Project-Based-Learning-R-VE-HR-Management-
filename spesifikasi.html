@@ -8,13 +8,14 @@
 </head>
 <script src="jquery.js"></script>
 <script src="modul_function.js"></script>
+<script src="karyawan.js"></script>
 <link rel="stylesheet" href="modul_style.css">
 <link rel="stylesheet" href="popup_style.css">
 <link rel="stylesheet" href="karyawan.css">
 
 <body>
     <div class="overlay"></div>
-    <div class="popup">
+    <div class="popup" id="input_spec">
         <span class="x">&times;</span>
         <span class="popup_tittle">Tambah Spesifikasi Kerja</span>
         <hr class="line">
@@ -63,6 +64,67 @@
         <hr class="line">
         <span class="close">Tutup</span>
         <span class="save">Simpan</span>
+    </div>
+
+    <div class="popup" id="update_spec">
+        <span class="x">&times;</span>
+        <span class="popup_tittle">Ubah Spesifikasi Kerja</span>
+        <hr class="line">
+        <table class="data">
+            <tr>
+                <td class="popup_text">Nama Departemen </td>
+                <td class="popup_data">
+                    <select name="" id="" class="popup_select">
+                        <option value="" disabled selected hidden class="placeholder">co. Marketing</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Human Resource">Human Resource</option>
+                        <option value="Operasional & Produksi">Operasional & Produksi</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="popup_text">Nama Divisi </td>
+                <td class="popup_data">
+                    <select name="" id="" class="popup_select">
+                        <option value="" disabled selected hidden class="placeholder">co. Produksi</option>
+                        <option value="HR Training">HR Training</option>
+                        <option value="Produksi">Produksi</option>
+                        <option value="HR Recruitment">HR Recruitment</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="popup_text">Nama Spesifikasi</td>
+                <td class="popup_data">
+                    <input type="text" name="nama_pencapaian" placeholder="co. Barista" class="popup_input">
+                </td>
+            </tr>
+            <tr>
+                <td class="popup_text">Nama Supervisor </td>
+                <td class="popup_data">
+                    <select name="" id="" class="popup_select">
+                        <option value="" disabled selected hidden class="placeholder">Pemimpin Spesifikasi</option>
+                        <option value="Agung Wahyudi">Agung Wahyudi</option>
+                        <option value="Christian Octavianus">Christian Octavianus</option>
+                        <option value="Michael Eka">Michael Eka</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <hr class="line">
+        <span class="close">Tutup</span>
+        <span class="save">Simpan</span>
+    </div>
+
+    <div class="popup" id="hapus_popup">
+        <span class="x">&times;</span>
+        <span class="popup_tittle">Hapus Spesifikasi Kerja</span>
+        <hr class="line">
+        <span class="popup_text">Apakah Anda yakin mau menghapus spesifikasi kerja ini?</span>
+        <br>
+        <span class="ya" id="hapus_status_valid">Ya</span>
+        <span class="tidak">Tidak</span>
     </div>
 
     <div class="top">
@@ -136,24 +198,22 @@
                 </span>James William</span><br>
             <span class="body_spec">
                 <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" 
-                    class="icon_keterangan_spec">
-                        <path fill-rule="evenodd"
-                            d="M4.5 2.25a.75.75 0 0 0 0 1.5v16.5h-.75a.75.75 0 0 0 0 1.5h16.5a.75.75
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        class="icon_keterangan_spec">
+                        <path fill-rule="evenodd" d="M4.5 2.25a.75.75 0 0 0 0 1.5v16.5h-.75a.75.75 0 0 0 0 1.5h16.5a.75.75
                             0 0 0 0-1.5h-.75V3.75a.75.75 0 0 0 0-1.5h-15ZM9 6a.75.75 0 0 0 0 1.5h1.5a.75.75
                             0 0 0 0-1.5H9Zm-.75 3.75A.75.75 0 0 1 9 9h1.5a.75.75 0 0 1 0 1.5H9a.75.75 0 0 
                             1-.75-.75ZM9 12a.75.75 0 0 0 0 1.5h1.5a.75.75 0 0 0 0-1.5H9Zm3.75-5.25A.75.75 0 
                             0 1 13.5 6H15a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1-.75-.75ZM13.5 9a.75.75 0 0 0 0 
                             1.5H15A.75.75 0 0 0 15 9h-1.5Zm-.75 3.75a.75.75 0 0 1 .75-.75H15a.75.75 0 0 1 0 
                             1.5h-1.5a.75.75 0 0 1-.75-.75ZM9 19.5v-2.25a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 
-                            1 .75.75v2.25a.75.75 0 0 1-.75.75h-4.5A.75.75 0 0 1 9 19.5Z"
-                            clip-rule="evenodd" />
+                            1 .75.75v2.25a.75.75 0 0 1-.75.75h-4.5A.75.75 0 0 1 9 19.5Z" clip-rule="evenodd" />
                     </svg>
                 </span>Produksi</span><br>
             <span class="keterangan_spec">Operasional & Produksi</span><br>
             <hr>
-            <div class="ubah_karyawan">Ubah</div>
-            <div class="hapus_karyawan">Hapus</div>
+            <div class="ubah_karyawan" id="ubah_spec">Ubah</div>
+            <div class="hapus_karyawan" id="hapus_spec">Hapus</div>
         </div>
     </div>
 </body>

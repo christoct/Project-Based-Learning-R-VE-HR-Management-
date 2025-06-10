@@ -8,11 +8,23 @@
 </head>
 <script src="jquery.js"></script>
 <script src="modul_function.js"></script>
+<script src="rekrutmen.js"></script>
 <link rel="stylesheet" href="modul_style.css">
 <link rel="stylesheet" href="popup_style.css">
 <link rel="stylesheet" href="rekrutmen.css">
+<link rel="stylesheet" href="popup_style.css">
 
 <body>
+    <div class="overlay"></div>
+    <div class="popup" id="hapus_pelamar">
+        <span class="x">&times;</span>
+        <span class="popup_tittle">Hapus Pelamar</span>
+        <hr class="line">
+        <span class="popup_text">Apakah Anda yakin mau menghapus pelamar ini?</span>
+        <br>
+        <span class="ya" id="hapus_pelamar_valid">Ya</span>
+        <span class="tidak">Tidak</span>
+    </div>
 
     <div class="top">
         <div class="modul">
@@ -68,12 +80,14 @@
         </div>
     </div>
 
-        <div class="wadah_pelamar">
+    <div class="wadah_pelamar">
         <div class="data_pelamar">
-            <span class="tittle_lowongan">Michael Eka</span><br><hr>
+            <span class="tittle_lowongan">Michael Eka</span><br>
+            <hr>
             <span class="body_pelamar">Lowongan Fashion Designer</span>
-            <span class="pelamar_stat">Baru</span><br><hr>
-            <div class="ubah_rekrutmen">Ubah</div>
+            <span class="pelamar_stat">Baru</span><br>
+            <hr>
+            <div class="ubah_rekrutmen" id="ubah_pelamar">Ubah</div>
             <div class="hapus_rekrutmen">Hapus</div>
         </div>
     </div>

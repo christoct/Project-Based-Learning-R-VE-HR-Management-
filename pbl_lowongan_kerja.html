@@ -12,18 +12,20 @@
 <link rel="stylesheet" href="modul_style.css">
 <link rel="stylesheet" href="popup_style.css">
 <link rel="stylesheet" href="rekrutmen.css">
+
 <body>
 
     <div class="overlay"></div>
-    <div class="popup">
+    <div class="popup" id="tambah_lowongan">
         <span class="x">&times;</span>
-        <span class="popup_tittle">Tambah Lowongan</span> <hr class="line">
+        <span class="popup_tittle">Tambah Lowongan</span>
+        <hr class="line">
         <table class="data">
             <tr>
                 <td class="popup_text">Nama Lowongan </td>
                 <td class="popup_data">
-                    <input type="text" name="nama_lowongan"
-                    placeholder="co. Lowongan Kepala Sales" class="popup_input"></td>
+                    <input type="text" name="nama_lowongan" placeholder="co. Lowongan Kepala Sales" class="popup_input">
+                </td>
             </tr>
             <tr>
                 <td class="popup_text">Posisi Pekerjaan</td>
@@ -31,10 +33,10 @@
                     <select name="posisi" id="pilih_posisi" class="popup_select">
                         <option value="" disabled selected hidden class="placeholder">
                             co. Staff</option>
-                        <option value="Staff" >Staff</option>
-                        <option value="Supervisor" >Supervisor</option>
-                        <option value="Manager" >Manager</option>
-                        <option value="Direktur" >Direktur</option>
+                        <option value="Staff">Staff</option>
+                        <option value="Supervisor">Supervisor</option>
+                        <option value="Manager">Manager</option>
+                        <option value="Direktur">Direktur</option>
                     </select>
                 </td>
             </tr>
@@ -43,8 +45,8 @@
                 <td class="popup_data">
                     <select name="departemen" id="" class="popup_select">
                         <option value="" disabled selected hidden class="placeholder">co. Operational</option>
-                        <option value="marketing" >Marketing</option>
-                        <option value="hr" >Human Resources</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="hr">Human Resources</option>
                     </select>
                 </td>
             </tr>
@@ -53,8 +55,8 @@
                 <td class="popup_data">
                     <select name="departemen" id="" class="popup_select">
                         <option value="" disabled selected hidden class="placeholder">co. HR Training</option>
-                        <option value="HR Training" >HR Training</option>
-                        <option value="Branding" >Branding</option>
+                        <option value="HR Training">HR Training</option>
+                        <option value="Branding">Branding</option>
                     </select>
                 </td>
             </tr>
@@ -63,8 +65,8 @@
                 <td class="popup_data">
                     <select name="departemen" id="" class="popup_select">
                         <option value="" disabled selected hidden class="placeholder">co. HR BaristaTraining</option>
-                        <option value="HR Barista Training" >HR Barista Training</option>
-                        <option value="SEO Specialist" >SEO Specialist</option>
+                        <option value="HR Barista Training">HR Barista Training</option>
+                        <option value="SEO Specialist">SEO Specialist</option>
                     </select>
                 </td>
             </tr>
@@ -73,8 +75,8 @@
                 <td class="popup_data">
                     <select name="pekerjaan" id="" class="popup_select">
                         <option value="" disabled selected hidden class="placeholder">co. HR Design Trainer</option>
-                        <option value="Fashion Designer" >Fashion Designer</option>
-                        <option value="Kepala Penjahit" >Kepala Penjahit</option>
+                        <option value="Fashion Designer">Fashion Designer</option>
+                        <option value="Kepala Penjahit">Kepala Penjahit</option>
                     </select>
                 </td>
             </tr>
@@ -82,8 +84,8 @@
             <tr>
                 <td class="popup_text">Tenggat Akhir</td>
                 <td class="popup_data">
-                    <input type="date" name="nama_lowongan"
-                    placeholder="co. Lowongan Kepala Sales" class="popup_date"></td>
+                    <input type="date" name="nama_lowongan" placeholder="co. Lowongan Kepala Sales" class="popup_date">
+                </td>
             </tr>
         </table>
         <br>
@@ -94,6 +96,95 @@
         <span class="non-aktif">Non-Aktif</span>
     </div>
 
+    <div class="popup" id="update_lowongan">
+        <span class="x">&times;</span>
+        <span class="popup_tittle">Ubah Lowongan</span>
+        <hr class="line">
+        <table class="data">
+            <tr>
+                <td class="popup_text">Nama Lowongan </td>
+                <td class="popup_data">
+                    <input type="text" name="nama_lowongan" placeholder="co. Lowongan Kepala Sales" class="popup_input">
+                </td>
+            </tr>
+            <tr>
+                <td class="popup_text">Posisi Pekerjaan</td>
+                <td class="popup_data">
+                    <select name="posisi" id="pilih_posisi" class="popup_select">
+                        <option value="" disabled selected hidden class="placeholder">
+                            co. Staff</option>
+                        <option value="Staff">Staff</option>
+                        <option value="Supervisor">Supervisor</option>
+                        <option value="Manager">Manager</option>
+                        <option value="Direktur">Direktur</option>
+                    </select>
+                </td>
+            </tr>
+            <tr id="baris_departemen">
+                <td class="popup_text">Departemen </td>
+                <td class="popup_data">
+                    <select name="departemen" id="" class="popup_select">
+                        <option value="" disabled selected hidden class="placeholder">co. Operational</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="hr">Human Resources</option>
+                    </select>
+                </td>
+            </tr>
+            <tr id="baris_divisi">
+                <td class="popup_text">Divisi </td>
+                <td class="popup_data">
+                    <select name="departemen" id="" class="popup_select">
+                        <option value="" disabled selected hidden class="placeholder">co. HR Training</option>
+                        <option value="HR Training">HR Training</option>
+                        <option value="Branding">Branding</option>
+                    </select>
+                </td>
+            </tr>
+            <tr id="baris_spec">
+                <td class="popup_text">Spesifikasi Kerja </td>
+                <td class="popup_data">
+                    <select name="departemen" id="" class="popup_select">
+                        <option value="" disabled selected hidden class="placeholder">co. HR BaristaTraining</option>
+                        <option value="HR Barista Training">HR Barista Training</option>
+                        <option value="SEO Specialist">SEO Specialist</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="popup_text">Nama Pekerjaan </td>
+                <td class="popup_data">
+                    <select name="pekerjaan" id="" class="popup_select">
+                        <option value="" disabled selected hidden class="placeholder">co. HR Design Trainer</option>
+                        <option value="Fashion Designer">Fashion Designer</option>
+                        <option value="Kepala Penjahit">Kepala Penjahit</option>
+                    </select>
+                </td>
+            </tr>
+            </tr>
+            <tr>
+                <td class="popup_text">Tenggat Akhir</td>
+                <td class="popup_data">
+                    <input type="date" name="nama_lowongan" placeholder="co. Lowongan Kepala Sales" class="popup_date">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <hr class="line">
+        <span class="close">Batal</span>
+        <span class="save">Simpan</span>
+        <span class="aktif">Aktif</span>
+        <span class="non-aktif">Non-Aktif</span>
+    </div>
+
+    <div class="popup" id="hapus_lowongan">
+        <span class="x">&times;</span>
+        <span class="popup_tittle">Hapus Lowongan</span>
+        <hr class="line">
+        <span class="popup_text">Apakah Anda yakin mau menghapus lowongan ini?</span>
+        <br>
+        <span class="ya" id="ya">Ya</span>
+        <span class="tidak">Tidak</span>
+    </div>
 
     <div class="top">
         <div class="modul">
@@ -151,15 +242,17 @@
 
     <div class="wadah_lowongan">
         <div class="data_lowongan">
-            <span class="tittle_lowongan">Lowongan Fashion Designer</span><br><hr>
+            <span class="tittle_lowongan">Lowongan Fashion Designer</span><br>
+            <hr>
             <span class="body_lowongan">Fashion Designer</span>
             <span class="lowongan_stat">Aktif</span>
-            <span class="tanggal_lowongan">09/12/2025</span><hr>
+            <span class="tanggal_lowongan">09/12/2025</span>
+            <hr>
             <div class="ubah_rekrutmen">Ubah</div>
             <div class="hapus_rekrutmen">Hapus</div>
         </div>
     </div>
-    
+
 </body>
 
 </html>

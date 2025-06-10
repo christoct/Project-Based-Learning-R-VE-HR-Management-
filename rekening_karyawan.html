@@ -9,13 +9,14 @@
 <script src="jquery.js"></script>
 <script src="modul_function.js"></script>
 <script src="input_function.js"></script>
+<script src="penggajian.js"></script>
 <link rel="stylesheet" href="modul_style.css">
 <link rel="stylesheet" href="popup_style.css">
 <link rel="stylesheet" href="penggajian.css">
 
 <body>
     <div class="overlay"></div>
-    <div class="popup">
+    <div class="popup" id="input_rekening">
         <span class="x">&times;</span>
         <span class="popup_tittle">Tambah Rekening Karyawan</span>
         <hr class="line">
@@ -56,6 +57,59 @@
         <hr class="line">
         <span class="close">Tutup</span>
         <span class="save">Simpan</span>
+    </div>
+
+    <div class="popup" id="update_rekening">
+        <span class="x">&times;</span>
+        <span class="popup_tittle">Ubah Rekening Karyawan</span>
+        <hr class="line">
+        <table class="data">
+            <tr>
+                <td class="popup_text">Nama Karyawan</td>
+                <td class="popup_data">
+                    <select name="rekening" id="" class="popup_select">
+                        <option value="" disabled selected hidden class="placeholder">co. Agung</option>
+                        <option value="Michael Eka">Michael Eka</option>
+                        <option value="Christian Octavianus">Christian Octavianus</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="popup_text">Nama Bank</td>
+                <td class="popup_data">
+                    <select name="rekening" id="" class="popup_select">
+                        <option value="" disabled selected hidden class="placeholder">co. BCA</option>
+                        <option value="BCA">BCA</option>
+                        <option value="BRI">BRI</option>
+                        <option value="Mandiri">Mandiri</option>
+                        <option value="BNI">BNI</option>
+                        <option value="Danamon">Danamon</option>
+                        <option value="OCBC">OCBC</option>
+                        <option value="CIMB Niaga">CIMB Niaga</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="popup_text">Nomor Rekening </td>
+                <td class="popup_data">
+                    <input type="text" name="nomor_rekening" placeholder="co. 2790463039" class="popup_input">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <hr class="line">
+        <span class="close">Tutup</span>
+        <span class="save">Simpan</span>
+    </div>
+
+        <div class="popup" id="hapus_popup">
+        <span class="x">&times;</span>
+        <span class="popup_tittle">Hapus Rekening Karyawan</span>
+        <hr class="line">
+        <span class="popup_text">Apakah Anda yakin mau menghapus rekening karyawan ini?</span>
+        <br>
+        <span class="ya" id="hapus_status_valid">Ya</span>
+        <span class="tidak">Tidak</span>
     </div>
 
     <div class="top">
@@ -120,8 +174,8 @@
                 2345714546</span><br>
                 <span class="keterangan_rekening">BCA</span><br>
             <hr>
-            <div class="ubah_penggajian">Ubah</div>
-            <div class="hapus_penggajian">Hapus</div>
+            <div class="ubah_penggajian" id="ubah_rekening">Ubah</div>
+            <div class="hapus_penggajian" id="hapus_rekening">Hapus</div>
         </div>
     </div>
 </body>

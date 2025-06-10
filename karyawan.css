@@ -305,6 +305,10 @@
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
     width: 100%;
 }
+.heading_skill:hover{
+    cursor: pointer;
+    background-color: rgb(166, 216, 216);
+}
 
 .data_skill {
     display: block;

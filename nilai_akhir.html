@@ -8,14 +8,15 @@
 </head>
 <script src="jquery.js"></script>
 <script src="modul_function.js"></script>
+<script src="penilaian.js"></script>
 <link rel="stylesheet" href="modul_style.css">
 <link rel="stylesheet" href="popup_style.css">
 <link rel="stylesheet" href="penilaian.css">
 
 <body>
 
-    <div class="overlay"></div>
-    <div class="popup">
+    <div class="overlay" ></div>
+    <div class="popup" id="input_nilai">
         <span class="x">&times;</span>
         <span class="popup_tittle">Tambah Nilai Akhir</span>
         <hr class="line">
@@ -31,6 +32,34 @@
         <hr class="line">
         <span class="close">Tutup</span>
         <span class="save">Simpan</span>
+    </div>
+
+    <div class="popup" id="update_nilai">
+        <span class="x">&times;</span>
+        <span class="popup_tittle">Ubah Nilai Akhir</span>
+        <hr class="line">
+        <table class="data">
+            <tr>
+                <td class="popup_text">Nama Nilai Akhir </td>
+                <td class="popup_data">
+                    <input type="text" name="nama_pencapaian"
+                    placeholder="co. Sangat Memuaskan" class="popup_input"></td>
+            </tr>
+        </table>
+        <br>
+        <hr class="line">
+        <span class="close" id="hapus_nilai">Hapus</span>
+        <span class="save">Simpan</span>
+    </div>
+
+    <div class="popup" id="hapus_popup">
+        <span class="x">&times;</span>
+        <span class="popup_tittle">Hapus Nilai Akhir</span>
+        <hr class="line">
+        <span class="popup_text">Apakah Anda yakin mau menghapus nilai akhir ini?</span>
+        <br>
+        <span class="ya" id="hapus_status_valid">Ya</span>
+        <span class="tidak">Tidak</span>
     </div>
 
     <div class="top">

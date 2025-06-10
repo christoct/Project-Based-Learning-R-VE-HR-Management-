@@ -14,22 +14,13 @@ $(document).ready(function () {
     $(".logout").parent().click(function () {
         window.location.href = "pbl_login.html";
     })
-    $("#new_lowongan,#tambah_skill,#new_struktur,#new_rekening,#new_kontrak").click(function () {
-        $('.overlay, .popup').fadeIn();
-    })
-    $("#new_penilaian,#new_pencapaian,#new_nilai,#new_status,#new_departemen,#new_divisi").click(function () {
-        $('.overlay, .popup').fadeIn();
-    })
-    $("#new_spesifikasi").click(function () {
-        $('.overlay, .popup').fadeIn();
-    })
-    $("#new_spesifikasi").click(function () {
+    $("#tambah_skill").click(function () {
         $('.overlay, .popup').fadeIn();
     })
     $("#new_kemampuan").click(function () {
         $('.overlay, #jenis_skill').fadeIn();
     })
-    $(".close,.x").click(function () {
+    $(".close,.x,.tidak").click(function () {
         $('.overlay, .popup').fadeOut();
     })
     $("#tutup_jenis,#close_jenis").click(function () {

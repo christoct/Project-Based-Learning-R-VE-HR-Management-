@@ -9,13 +9,14 @@
 <script src="jquery.js"></script>
 <script src="modul_function.js"></script>
 <script src="input_function.js"></script>
+<script src="penggajian.js"></script>
 <link rel="stylesheet" href="modul_style.css">
 <link rel="stylesheet" href="popup_style.css">
 <link rel="stylesheet" href="penggajian.css">
 
 <body>
     <div class="overlay"></div>
-    <div class="popup">
+    <div class="popup" id="input_kontrak">
         <span class="x">&times;</span>
         <span class="popup_tittle">Tambah Kontrak Kerja</span>
         <hr class="line">
@@ -87,6 +88,89 @@
         <span class="save">Simpan</span>
     </div>
 
+    <div class="popup" id="update_kontrak">
+        <span class="x">&times;</span>
+        <span class="popup_tittle">Ubah Kontrak Kerja</span>
+        <hr class="line">
+        <table class="data">
+            <tr>
+                <td class="popup_text">Nama Kontrak</td>
+                <td class="popup_data">
+                    <input type="text" name="nama_kontrak" placeholder="co. Kontrak Kerja Agung" class="popup_input">
+                </td>
+            </tr>
+            <tr>
+                <td class="popup_text">Nama Karyawan</td>
+                <td class="popup_data">
+                    <select name="rekening" id="" class="popup_select">
+                        <option value="" disabled selected hidden class="placeholder">co. Agung</option>
+                        <option value="Michael Eka">Michael Eka</option>
+                        <option value="Christian Octavianus">Christian Octavianus</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="popup_text">Struktur Gaji</td>
+                <td class="popup_data">
+                    <select name="rekening" id="" class="popup_select">
+                        <option value="" disabled selected hidden class="placeholder">co. Struktur Full-Time</option>
+                        <option value="Struktur Full-Time">Struktur Full-Time</option>
+                        <option value="Struktur Part-Time">Struktur Part-Time</option>
+                        <option value="Struktur Magang">Struktur Magang</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="popup_text">Penanggung Jawab</td>
+                <td class="popup_data">
+                    <select name="penanggung_jawab" id="" class="popup_select">
+                        <option value="" disabled selected hidden class="placeholder">co. Karina</option>
+                        <option value="Agung Wahyudi">Agung Wahyudi</option>
+                        <option value="Delila Simorangkir">Delila Simorangkir</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="popup_text">Tanggal Mulai Kontrak</td>
+                <td class="popup_data">
+                    <input type="date" name="" class="popup_date">
+                </td>
+            </tr>
+            <tr>
+                <td class="popup_text">Tanggal Akhir Kontrak</td>
+                <td class="popup_data">
+                    <input type="date" name="" class="popup_date">
+                </td>
+            </tr>
+            <tr>
+                <td class="popup_text">Status Kontrak</td>
+                <td class="popup_data">
+                    <select name="penanggung_jawab" id="" class="popup_select">
+                        <option value="" disabled selected hidden class="placeholder">co. Belum Mulai</option>
+                        <option value="Belum Mulai">Belum Mulai</option>
+                        <option value="Berjalan">Berjalan</option>
+                        <option value="Berakhir">Berakhir</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <hr class="line">
+        <span class="close">Tutup</span>
+        <span class="save">Simpan</span>
+    </div>
+
+    <div class="popup" id="hapus_popup">
+        <span class="x">&times;</span>
+        <span class="popup_tittle">Hapus Kontrak Kerja</span>
+        <hr class="line">
+        <span class="popup_text">Apakah Anda yakin mau menghapus kontrak kerja ini?</span>
+        <br>
+        <span class="ya" id="ya">Ya</span>
+        <span class="tidak">Tidak</span>
+    </div>
+
+
     <div class="top">
         <div class="modul">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="back">
@@ -148,10 +232,10 @@
             <span class="body_kontrak">
                 <span>
                 </span>Michael Eka</span><br>
-                <span class="keterangan_kontrak">Berjalan</span><br>
+            <span class="keterangan_kontrak">Berjalan</span><br>
             <hr>
-            <div class="ubah_penggajian">Ubah</div>
-            <div class="hapus_penggajian">Hapus</div>
+            <div class="ubah_penggajian" id="ubah_kontrak">Ubah</div>
+            <div class="hapus_penggajian" id="hapus_kontrak">Hapus</div>
         </div>
     </div>
 </body>

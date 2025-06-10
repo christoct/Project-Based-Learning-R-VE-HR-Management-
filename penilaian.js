@@ -1,0 +1,31 @@
+$(document).ready(function(){
+    $("#new_penilaian").click(function(){
+        $("#input_penilaian,.overlay").fadeIn();
+    })
+    $("#ubah_penilaian").click(function(){
+        $("#update_penilaian,.overlay").fadeIn();
+    })
+    $("#hapus_penilaian").click(function(){
+        $("#hapus_popup,.overlay").fadeIn();
+    })
+
+    $("#new_pencapaian").click(function(){
+        $("#input_pencapaian,.overlay").fadeIn();
+    })
+    $("#ubah_pencapaian").click(function(){
+        $("#update_pencapaian,.overlay").fadeIn();
+    })
+    $("#hapus_pencapaian").click(function(){
+        $("#hapus_popup,.overlay").fadeIn();
+    })
+
+    $("#new_nilai").click(function(){
+        $("#input_nilai,.overlay").fadeIn();
+    })
+    $(".data_nilai").click(function(){
+        $("#update_nilai,.overlay").fadeIn();
+    })
+    $("#hapus_nilai").click(function(){
+        $("#hapus_popup,.overlay").fadeIn();
+    })
+})

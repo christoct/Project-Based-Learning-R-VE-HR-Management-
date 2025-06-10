@@ -8,13 +8,14 @@
 </head>
 <script src="jquery.js"></script>
 <script src="modul_function.js"></script>
+<script src="karyawan.js"></script>
 <link rel="stylesheet" href="modul_style.css">
 <link rel="stylesheet" href="popup_style.css">
 <link rel="stylesheet" href="karyawan.css">
 
 <body>
     <div class="overlay"></div>
-    <div class="popup">
+    <div class="popup" id="input_divisi">
         <span class="x">&times;</span>
         <span class="popup_tittle">Tambah Divisi</span>
         <hr class="line">
@@ -52,6 +53,56 @@
         <hr class="line">
         <span class="close">Tutup</span>
         <span class="save">Simpan</span>
+    </div>
+
+    <div class="popup" id="update_divisi">
+        <span class="x">&times;</span>
+        <span class="popup_tittle">Ubah Divisi</span>
+        <hr class="line">
+        <table class="data">
+            <tr>
+                <td class="popup_text">Nama Departemen </td>
+                <td class="popup_data">
+                    <select name="" id="" class="popup_select">
+                        <option value="" disabled selected hidden class="placeholder">co. Marketing</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Human Resource">Human Resource</option>
+                        <option value="Operasional">Operasional</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="popup_text">Nama Divisi </td>
+                <td class="popup_data">
+                    <input type="text" name="nama_pencapaian" placeholder="co. HR Training" class="popup_input">
+                </td>
+            </tr>
+            <tr>
+                <td class="popup_text">Nama Manager </td>
+                <td class="popup_data">
+                    <select name="" id="" class="popup_select">
+                        <option value="" disabled selected hidden class="placeholder">Pemimpin Divisi</option>
+                        <option value="Agung Wahyudi">Agung Wahyudi</option>
+                        <option value="Christian Octavianus">Christian Octavianus</option>
+                        <option value="Michael Eka">Michael Eka</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <hr class="line">
+        <span class="close">Tutup</span>
+        <span class="save">Simpan</span>
+    </div>
+
+    <div class="popup" id="hapus_popup">
+        <span class="x">&times;</span>
+        <span class="popup_tittle">Hapus Divisi</span>
+        <hr class="line">
+        <span class="popup_text">Apakah Anda yakin mau menghapus divisi ini?</span>
+        <br>
+        <span class="ya" id="hapus_status_valid">Ya</span>
+        <span class="tidak">Tidak</span>
     </div>
 
     <div class="top">
@@ -110,7 +161,7 @@
         </div>
     </div>
 
-        <div class="wadah_divisi">
+    <div class="wadah_divisi">
         <div class="data_divisi">
             <span class="data_tittle_karyawan">Produksi</span><br>
             <hr>
@@ -123,9 +174,10 @@
                             0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
                     </svg>
                 </span>Michael Eka</span><br>
-                <span class="keterangan_divisi">Operasional & Produksi</span><br><hr>
-            <div class="ubah_karyawan">Ubah</div>
-            <div class="hapus_karyawan">Hapus</div>
+            <span class="keterangan_divisi">Operasional & Produksi</span><br>
+            <hr>
+            <div class="ubah_karyawan" id="ubah_divisi">Ubah</div>
+            <div class="hapus_karyawan" id="hapus_divisi">Hapus</div>
         </div>
     </div>
 

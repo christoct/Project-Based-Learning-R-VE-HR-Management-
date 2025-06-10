@@ -8,6 +8,7 @@
 </head>
 <script src="jquery.js"></script>
 <script src="modul_function.js"></script>
+<script src="penilaian.js"></script>
 <link rel="stylesheet" href="modul_style.css">
 <link rel="stylesheet" href="popup_style.css">
 <link rel="stylesheet" href="penilaian.css">
@@ -15,7 +16,7 @@
 <body>
 
     <div class="overlay"></div>
-    <div class="popup">
+    <div class="popup" id="input_pencapaian">
         <span class="x">&times;</span>
         <span class="popup_tittle">Tambah Pencapaian Karyawan</span>
         <hr class="line">
@@ -67,6 +68,70 @@
         <hr class="line">
         <span class="close">Tutup</span>
         <span class="save">Simpan</span>
+    </div>
+
+    <div class="popup" id="update_pencapaian">
+        <span class="x">&times;</span>
+        <span class="popup_tittle">Ubah Pencapaian Karyawan</span>
+        <hr class="line">
+        <table class="data">
+            <tr>
+                <td class="popup_text">Nama Pencapaian </td>
+                <td class="popup_data">
+                    <input type="text" name="nama_pencapaian" placeholder="co. Mengikuti Training Leadership"
+                        class="popup_input">
+                </td>
+            </tr>
+            <tr>
+                <td class="popup_text">Nama Karyawan</td>
+                <td class="popup_data">
+                    <select name="rekening" id="" class="popup_select">
+                        <option value="" disabled selected hidden class="placeholder">co. Agung</option>
+                        <option value="Michael Eka">Michael Eka</option>
+                        <option value="Christian Octavianus">Christian Octavianus</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="popup_text">Tanggal Mulai</td>
+                <td class="popup_data">
+                    <input type="date" name="" class="popup_date">
+                </td>
+            </tr>
+            <tr>
+                <td class="popup_text">Tanggal Selesai</td>
+                <td class="popup_data">
+                    <input type="date" name="" class="popup_date">
+                </td>
+            </tr>
+            <tr>
+                <td class="popup_text">Status Pencapaian</td>
+                <td class="popup_data">
+                    <select name="rekening" id="" class="popup_select">
+                        <option value="" disabled selected hidden class="placeholder">Progress (0-100%)</option>
+                        <option value="Belum Dilaksanakan (0%)">Belum Dilaksanakan (0%)</option>
+                        <option value="Sedang Dilaksanakan (25%)">Sedang Dilaksanakan (25%)</option>
+                        <option value="Separuh Jalan (50%)">Separuh Jalan (50%)</option>
+                        <option value="Hampir Selesai (75%)">Hampir Selesai (75%)</option>
+                        <option value="Selesai (100%)">Selesai (100%)</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <hr class="line">
+        <span class="close">Tutup</span>
+        <span class="save">Simpan</span>
+    </div>
+
+    <div class="popup" id="hapus_popup">
+        <span class="x">&times;</span>
+        <span class="popup_tittle">Hapus Pencapaian Karyawan</span>
+        <hr class="line">
+        <span class="popup_text">Apakah Anda yakin mau menghapus pencapaian karyawan ini?</span>
+        <br>
+        <span class="ya" id="hapus_status_valid">Ya</span>
+        <span class="tidak">Tidak</span>
     </div>
 
     <div class="top">
@@ -130,8 +195,8 @@
                 Christian Octavianus</span><br>
             <span class="keterangan_pencapaian">Hampir Selesai (75%)</span><br>
             <hr>
-            <div class="ubah_penilaian">Ubah</div>
-            <div class="hapus_penilaian">Hapus</div>
+            <div class="ubah_penilaian" id="ubah_pencapaian">Ubah</div>
+            <div class="hapus_penilaian" id="hapus_pencapaian">Hapus</div>
         </div>
     </div>
 </body>
