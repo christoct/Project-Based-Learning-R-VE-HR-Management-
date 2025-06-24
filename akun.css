@@ -1,0 +1,146 @@
+    .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header {
+        text-align: center;
+        color: #190f3fff;
+        font-size: 4vw;
+        font-weight: bolder;
+        padding-top: 8%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .logo {
+        width: 30%;
+        height: 30%;
+        margin-top: 1vw;
+    }
+
+    .input {
+        color: black;
+        margin-top: 1vw;
+        margin-bottom: 0.5vw;
+        width: 90%;
+        height: 3vw;
+        font-size: 1.2vw;
+        padding-left: 1vw;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .main {
+        color: #190f3fff;
+        font-size: 1.3em;
+        font-weight: bold;
+        padding-left: 20px;
+    }
+
+    button {
+        background-color: #190f3fff;
+        color: white;
+        font-size: 15px;
+        width: 92%;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        margin-right: 1vw;
+        margin-bottom: 0vw;
+        margin-top: 1.5vw;
+        font-size: 1.2vw;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 2px #190f3fff;
+    }
+
+    button:hover {
+        cursor: pointer;
+        border: none;
+    }
+
+    .button_batal {
+        background-color: red;
+        color: white;
+        font-size: 15px;
+        width: 92%;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        margin-right: 1vw;
+        margin-bottom: 0vw;
+        margin-top: 0.7vw;
+        font-size: 1.2vw;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+
+    }
+
+    .button_batal:hover {
+        cursor: pointer;
+    }
+
+    body {
+        margin: 0px;
+    }
+
+    .table_daftar {
+        padding-left: 5vw;
+        margin-bottom: 3vw;
+        width: 62vw;
+    }
+
+    .text {
+        padding-top: 2vw;
+    }
+
+    .tabel_lupa {
+        padding-left: 5vw;
+        margin-bottom: 3vw;
+        width: 62vw;
+    }
+
+    .error:empty {
+        display: none;
+    }
+
+    .text_keterangan {
+        padding-top: 3vw;
+        padding-left: 32%;
+        font-size: 1.2vw;
+    }
+
+    @media (max-width:1200px) {
+        .gambarlogin {
+            height: 55vw;
+            width: 49%;
+            min-width: auto;
+        }
+    }
+
+    .error {
+        color: red;
+        font-weight: bold;
+        font-size: 1.5vw;
+        margin-right: 50vw;
+        background-color: rgb(255, 234, 234);
+        padding-top: 0.7vw;
+        padding-bottom: 0.7vw;
+        padding-left: 2vw;
+        width: 89%;
+    }
+
+    .back {
+        color: red;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .transparent-link-back {
+        text-decoration: none;
+        color: red;
+        background: none;
+        cursor: pointer;
+        font: inherit;
+        font-size: 15vw;
+        padding: 5vw;
+    }

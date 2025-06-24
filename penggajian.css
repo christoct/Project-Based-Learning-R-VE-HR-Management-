@@ -84,8 +84,6 @@
     cursor: pointer;
 }
 
-/* Rekening */
-
 .data_rekening {
     width: 20.7vw;
     height: 10vw;
@@ -127,8 +125,6 @@
     font-weight: bold;
     font-style: italic;
 }
-
-/* Kontrak */
 
 .data_kontrak {
     width: 29vw;
@@ -172,9 +168,6 @@
     margin-bottom: 0vw;
     font-style: italic;
 }
-
-/* Slip Gaji */
-
 
 .data_slip {
     width: 29vw;
@@ -227,7 +220,6 @@
     font-style: italic;
 }
 
-/* adjustable */
 @media (max-width:1200px) {
     .ubah_penggajian {
         display: none;

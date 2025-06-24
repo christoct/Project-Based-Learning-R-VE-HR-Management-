@@ -504,7 +504,8 @@ option {
     left: 90vw;
     top: 7.5vw
 }
-.hapus_pekerjaan{
+
+.hapus_pekerjaan {
     background-color: rgb(181, 0, 0);
     width: 5vw;
     color: rgb(249, 252, 255);
@@ -588,4 +589,26 @@ option {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2vw;
+}
+
+.hapus_akun {
+    background-color: rgb(181, 0, 0);
+    color: rgb(249, 252, 255);
+    height: 1.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 0.9vw;
+    border-radius: 12px;
+    border: solid 1.5px rgb(181, 0, 0);
+}
+.hapus_akun:hover {
+    border-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+
+.wadah_hapus_akun {
+    margin-top: 2.8vw;
+    margin-left: 84vw;
+    margin-bottom: 1.2vw;
 }

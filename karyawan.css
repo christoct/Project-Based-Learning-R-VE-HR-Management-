@@ -90,8 +90,6 @@
     cursor: pointer;
 }
 
-/* departemen */
-
 .data_departemen {
     width: 29vw;
     height: 8.6vw;
@@ -129,8 +127,6 @@
     position: relative;
     bottom:0vw ;
 }
-
-/* Divisi */
 
 .data_divisi {
     width: 29vw;
@@ -183,8 +179,6 @@
     font-style: italic;
 }
 
-/* Spesifikasi */
-
 .data_spec {
     width: 29vw;
     height: 13.7vw;
@@ -236,8 +230,6 @@
     font-style: italic;
 }
 
-/* Deskripsi */
-
 .tabel_desc {
     width: 97%;
     margin-left: 1vw;
@@ -279,8 +271,6 @@
     cursor: pointer;
     background-color: rgb(240, 240, 240);
 }
-
-/* Kemampuan */
 
 .tabel_skill {
     width: 97%;
@@ -328,7 +318,7 @@
     cursor: pointer;
     background-color: rgb(240, 240, 240);
 }
-/* adjustable */
+
 @media (max-width:1200px) {
     .ubah_karyawan {
         display: none;

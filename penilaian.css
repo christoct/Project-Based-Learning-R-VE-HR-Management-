@@ -97,8 +97,6 @@
     cursor: pointer;
 }
 
-/* Pencapaian */
-
 .data_pencapaian {
     width: 29vw;
     height: 11.5vw;
@@ -142,8 +140,6 @@
     font-style: italic;
 }
 
-/* Nilai Akhir */
-
 .tabel_nilai {
     width: 97%;
     margin-left: 1vw;
@@ -186,7 +182,6 @@
     background-color: rgb(240, 240, 240);
 }
 
-/* adjustable */
 @media (max-width:1200px) {
     .ubah_penilaian {
         display: none;

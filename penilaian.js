@@ -28,4 +28,21 @@ $(document).ready(function(){
     $("#hapus_nilai").click(function(){
         $("#hapus_popup,.overlay").fadeIn();
     })
+    $("#simpan_nilai_akhir").click(function(){
+        $("#form_input_nilai_akhir").submit();
+    })
+    $("#simpan_penilaian").click(function(){
+        $("#form_input_penilaian").submit();
+    })
+    $('#pilih_karyawan').on('change', function () {
+        var nama = $('#pilih_karyawan option:selected').data('nama-karyawan');
+        $('#nama_karyawan').val(nama);
+    })
+    $('#pilih_penilai').on('change', function () {
+        var nama = $('#pilih_penilai option:selected').data('nama-penilai');
+        $('#nama_penilai').val(nama);
+    })
+    $("#simpan_pencapaian").click(function(){
+        $("#form_input_pencapaian").submit();
+    })
 })

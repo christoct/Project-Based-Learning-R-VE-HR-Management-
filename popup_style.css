@@ -25,7 +25,8 @@
     border-radius: 12px;
     border: solid 1.5px rgb(25, 13, 74);
 }
-.save_bidang{
+
+.save_bidang {
     background-color: rgb(25, 13, 74);
     width: 5vw;
     color: rgb(249, 252, 255);
@@ -56,7 +57,8 @@
     border-radius: 22px;
     border: solid 2px rgb(25, 13, 74);
 }
-.btn_bidang:hover{
+
+.btn_bidang:hover {
     cursor: pointer;
 }
 
@@ -73,7 +75,8 @@
     border-radius: 12px;
     border: solid 1.5px rgb(181, 0, 0);
 }
-.close_bidang{
+
+.close_bidang {
     background-color: rgb(181, 0, 0);
     width: 5vw;
     color: rgb(249, 252, 255);
@@ -91,14 +94,17 @@
     border-color: rgb(255, 255, 255);
     cursor: pointer;
 }
+
 .close_bidang:hover {
     border-color: rgb(255, 255, 255);
     cursor: pointer;
 }
+
 .save:hover {
     border-color: rgb(255, 255, 255);
     cursor: pointer;
 }
+
 .save_bidang:hover {
     border-color: rgb(255, 255, 255);
     cursor: pointer;
@@ -123,6 +129,7 @@
     margin-top: -10px;
     font-weight: bold;
 }
+
 .x_bidang {
     float: right;
     cursor: pointer;
@@ -132,12 +139,13 @@
     font-weight: bold;
 }
 
-.x:hover{
+.x:hover {
     cursor: pointer;
     color: rgb(55, 55, 55);
     transform: scale(1.2);
 }
-.x_bidang:hover{
+
+.x_bidang:hover {
     cursor: pointer;
     color: rgb(55, 55, 55);
     transform: scale(1.2);
@@ -158,10 +166,11 @@
     display: block;
 }
 
-.popup_data{
+.popup_data {
     padding-left: 20px;
 }
-.popup_text{
+
+.popup_text {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2vw;
     color: rgb(35, 24, 77);
@@ -169,7 +178,8 @@
     padding-bottom: 7px;
     padding-top: 7px;
 }
-.popup_input{
+
+.popup_input {
     padding-bottom: 5px;
     padding-top: 5px;
     font-size: 1.2vw;
@@ -177,35 +187,41 @@
     outline: none;
     width: 100%;
 }
-.popup_input:hover{
+
+.popup_input:hover {
     border-bottom: 1px solid black;
 }
-.popup_input:focus{
+
+.popup_input:focus {
     border-bottom: 1px solid rgb(29, 54, 194);
 }
 
-.popup_select{
+.popup_select {
     padding-bottom: 5px;
     padding-top: 5px;
     font-size: 1.3vw;
     border-style: none;
     outline: none;
     width: 100%;
-    color:  #7d7c7c;
+    color: #7d7c7c;
 }
-.popup_select:hover{
+
+.popup_select:hover {
     border-bottom: 1px solid black;
 }
-option{
-    color: black ;
+
+option {
+    color: black;
 }
-.popup_select:focus{
+
+.popup_select:focus {
     border-bottom: 1px solid rgb(29, 54, 194);
 }
 
-.data{
+.data {
     margin-right: 30px;
 }
+
 .aktif {
     position: relative;
     padding: 0.5vw;
@@ -219,7 +235,8 @@ option{
     font-weight: bold;
     margin: 0px;
 }
-.non-aktif{
+
+.non-aktif {
     position: relative;
     padding: 0.5vw;
     right: -6.5vw;
@@ -232,13 +249,16 @@ option{
     font-weight: bold;
     color: rgb(100, 100, 100);
 }
-.aktif:hover{
+
+.aktif:hover {
     cursor: pointer;
 }
-.non-aktif:hover{
+
+.non-aktif:hover {
     cursor: pointer;
 }
-.popup_date{
+
+.popup_date {
     padding-bottom: 5px;
     padding-top: 5px;
     font-size: 1.2vw;
@@ -246,13 +266,16 @@ option{
     outline: none;
     width: 100%;
 }
-.popup_date:hover{
+
+.popup_date:hover {
     border-bottom: 1px solid black;
 }
-.popup_date:focus{
+
+.popup_date:focus {
     border-bottom: 1px solid rgb(29, 54, 194);
 }
-.popup_keterangan{
+
+.popup_keterangan {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1vw;
     color: rgb(35, 24, 77);
@@ -261,6 +284,7 @@ option{
     padding-top: 7px;
     margin-left: 1vw;
 }
+
 .popup_number {
     font-size: 1.2vw;
     border-style: none;
@@ -276,6 +300,7 @@ option{
 .popup_number:focus {
     border-color: rgb(29, 54, 194);
 }
+
 .tambah {
     stroke: rgb(25, 13, 74);
     stroke-width: 1px;
@@ -286,47 +311,52 @@ option{
     top: 0.5vw;
 }
 
-.ya{
+.popup_buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    margin-top: 2vw;
+}
+
+.ya {
     background-color: rgb(25, 13, 74);
-    width: 5vw; 
+    width: 5vw;
     color: rgb(249, 252, 255);
     text-align: center;
     vertical-align: middle;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     padding-left: 0.5vw;
-    padding-right: 0.5vw;;
+    padding-right: 0.5vw;
     border-radius: 8px;
     padding-top: 0.5vw;
     padding-bottom: 0.5vw;
     border: solid 1.5px rgb(25, 13, 74);
     display: inline-block;
-    margin-top: 2vw;
-    margin-left: 30%;
-    margin-right: 0.5vw;
 }
-.tidak{
+
+.tidak {
     background-color: rgb(181, 0, 0);
-    width: 5vw; 
+    width: 5vw;
     color: rgb(249, 252, 255);
     text-align: center;
     vertical-align: middle;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     padding-left: 0.5vw;
-    padding-right: 0.5vw;;
+    padding-right: 0.5vw;
     border-radius: 8px;
     padding-top: 0.5vw;
     padding-bottom: 0.5vw;
     border: solid 1.5px rgb(181, 0, 0);
-    display: inline-block;
-    margin-top: 2vw;
 }
-.ya:hover{
+
+.ya:hover {
     cursor: pointer;
     border-color: white;
 }
-.tidak:hover{
+
+.tidak:hover {
     cursor: pointer;
     border-color: white;
 }

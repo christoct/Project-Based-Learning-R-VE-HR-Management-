@@ -6,18 +6,18 @@ $(document).ready(function () {
         document.getElementById('input_karyawan').requestSubmit();
     })
     $("#cancel_karyawan").click(function () {
-        window.location.href = "pbl_profil_karyawan.html"
+        window.location.href = "pbl_profil_karyawan.php"
     })
     $("#save_pelamar").click(function () {
         $("#input_pelamar").submit();
     })
     $("#cancel_pelamar").click(function () {
-        window.location.href = "pelamar.html"
+        window.location.href = "pelamar.php"
     })
     $(".upload_container_cv").hover(function () {
         $(".update_cv").toggle();
     })
-    $("#rupiah").on("input", function () {
+    $("#rupiah, #rupiah_update").on("input", function () {
         let value = $(this).val().replace(/[^\d]/g, '');
         let formatted = new Intl.NumberFormat('id-ID', {
             style: 'currency',
@@ -25,45 +25,8 @@ $(document).ready(function () {
             minimumFractionDigits: 0
         }).format(value);
         $(this).val(formatted);
+        $("#jumlah_gaji_raw").val(value);
     });
-    $("#confirm_slip").hide();
-    $("#kembali_confirm").hide();
-    $("#save_slip").hide();
-    $("#kembali_save").hide();
-    $("#generate_slip").click(function () {
-        $("#generate_slip").hide();
-        $("#confirm_slip").show();
-        $("#kembali_confirm").show();
-        $(".kalkulasi_pembayaran").show();
-    })
-    $("#kembali_confirm").click(function () {
-        $("#kembali_confirm").hide();
-        $("#confirm_slip").hide();
-        $("#generate_slip").show();
-        $(".kalkulasi_pembayaran").hide();
-    })
-    $("#confirm_slip").click(function () {
-        $("#kembali_confirm").hide();
-        $("#confirm_slip").hide();
-        $("#generate_slip").hide();
-        $(".keterangan_slip").show();
-        $("#save_slip").show();
-        $("#kembali_save").show();
-    })
-    $("#save_slip").click(function () {
-        window.location.href = "slip_gaji.html"
-    })
-    $("#kembali_save").click(function () {
-        $("#kembali_confirm").show();
-        $("#confirm_slip").show();
-        $("#generate_slip").hide();
-        $(".keterangan_slip").hide();
-        $("#save_slip").hide();
-        $("#kembali_save").hide();
-    })
-    $("#keluar_slip").click(function () {
-        window.location.href = "slip_gaji.html"
-    })
 
 
     $("#file_foto_karyawan, #file_profile_pelamar").change(function (event) {
@@ -101,6 +64,6 @@ $(document).ready(function () {
         $(".nama_cv").text(file.name);
         $("#icon_file").show();
         $("#document").hide();
-        $(".upload_container_cv").css("border","none");
+        $(".upload_container_cv").css("border", "none");
     })
 })
